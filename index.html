@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN" style="font-size: ;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="深圳大学,深大,荔园,学子天地">
+    <meta name="description" content="深圳大学学子天地是深大最大的校园传媒网站，致力于为深大学子提供有价值的资讯和服务。">
+    <link href="images/stulogo.png" type="image/x-icon" rel="shortcut icon" />
+    <title>深圳大学学子天地</title>
+    <link href="styles/global4phone.css" rel="stylesheet" type="text/css" media="screen and (max-width:767px)" />  
+    <link href="styles/global4pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:768px)" />
+    <!--<link href="styles/font.css" rel="stylesheet" type="text/css" />  -->   
+    <script type="text/javascript" src="scripts/jquery.min.js"></script> 
+    <script type="text/javascript" src="scripts/globals.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body>
+    <div class="inner_body">
+        <div class="header-phone">
+            <a id="menu_call" href="javascript:void(0)" onclick="sidebaropen();">
+                <img src="images/menu_call.png" alt="nav" />
+            </a>
+            <p>深圳大学学子天地</p>
+        </div>
+        <div class="header-pc">
+            <div class="header-secshadow"></div>
+            <ul>
+                <li><a class="nav-active" id="nav0" href="javascript:void(0)" onclick="navcome(0);">学子首页</a></li>
+                <li><a id="nav1" href="javascript:void(0)" onclick="navcome(1);">深大讲座</a></li>
+                <li><a id="nav2" href="javascript:void(0)" onclick="navcome(2);">活动预告</a></li>
+                <li><a id="nav3" href="javascript:void(0)" onclick="navcome(3);">深大摄影</a></li>
+                <li ><a id="nav4" href="javascript:void(0)" onclick="navcome(4);">服务专区</a></li>
+                <li class="now"></li>
+            </ul>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-main">
+                <div class="sidebar-top">
+                    <div class="sidebar-blur"></div>
+                    <img class="pchomepic" src="http://stu.szu.cn/static/images/coverphoto/festival.jpg" />
+                    <p class="stucampus_name">学子天地</p> 
+                    <p class="stuc_description">深大第一学生门户网站</p>
+                </div>
+
+                <ul class="nav1">
+                    <li><a href="javascript:void(0)"><img src="images/home_48.png" alt="icon" />学子首页</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/photo_48.png" alt="icon" />深大摄影</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/people_48.png" alt="icon" />深大人物</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/interesting_48.png" alt="icon" />趣物志</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/news_48.png" alt="icon" />新闻和通知</a></li>
+                </ul>
+                <hr />
+                <ul class="nav2">
+                    <li><a href="javascript:void(0)"><img src="images/comment_48.png" alt="icon" />深大导航</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/comment_48.png" alt="icon" />最新评论</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/comment_48.png" alt="icon" />最近访客</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/comment_48.png" alt="icon" />合作社团</a></li>
+                    <li><a href="javascript:void(0)"><img src="images/comment_48.png" alt="icon" />火车订票</a></li>
+                </ul>
+            </div>
+            <div class="call-back" onclick="sidebarclose();"></div>
+        </div>
+
+        <a href="javascript:void(0)" class="fixed-logo" onclick="hiddenthings()">
+            <img src="images/stucampus_logo 100px.png" alt="" />
+        </a>
+        <div class="banner">
+            <div class="selector">
+                <a class="round1 active" href="javascript:void(0)" onclick="bannerselect(0);"></a>
+                <a class="round2" href="javascript:void(0)" onclick="bannerselect(1);"></a>
+                <a class="round3" href="javascript:void(0)" onclick="bannerselect(2);"></a>
+                <a class="round4" href="javascript:void(0)" onclick="bannerselect(3);"></a>
+            </div>
+            <div id="banners" class="b-container">
+                <a  href="javascript:void(0)" style="left: 0rem;" >
+                    <div class="blur">
+                    </div>
+                    <p class="banner_title">少女的奇怪收藏</p>
+                    <p class="banner_describe">我是为了与你相遇才到这个世界的</p>
+                    <img src="images/banner1.jpg" alt="banner1" />
+                    <p class="banner_category">【深大摄影】</p>
+                </a>
+                <a  href="javascript:void(0)" style="left: 0rem;" >
+                    <div class="blur">
+                    </div>
+                    <p class="banner_title">少女的奇怪收藏</p>
+                    <p class="banner_describe">我是为了与你相遇才到这个世界的</p>
+                    <img src="images/banner2.jpg" alt="banner2" />
+                    <p class="banner_category">【深大摄影】</p>
+                </a>
+                <a  href="javascript:void(0)" style="left: 0rem;" >
+                    <div class="blur">
+                    </div>
+                    <p class="banner_title">少女的奇怪收藏</p>
+                    <p class="banner_describe">我是为了与你相遇才到这个世界的</p>
+                    <img src="images/banner3.jpg" alt="banner3" />
+                    <p class="banner_category">【深大摄影】</p>
+                </a>
+                <a  href="javascript:void(0)" style="left: 0rem;" >
+                    <div class="blur">
+                    </div>
+                    <p class="banner_title">少女的奇怪收藏</p>
+                    <p class="banner_describe">我是为了与你相遇才到这个世界的</p>
+                    <img src="images/banner4.jpg" alt="banner4" />
+                    <p class="banner_category">【深大摄影】</p>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="artical-content">
+                <div class="artical">
+                    <a href="/artical.html">
+                        <img class="a-pic" src="images/artical1.jpg">
+                        <div class="a-content">
+                            <span class="a-title">如何成为一个小仙女？【双十一必看】</span>
+                            <div class="a-info">
+                                精品收藏·11月08日
+                            </div>
+                            <p class="a-intro">正因为你为你的玫瑰花费了时间，这才使你的玫瑰如此重要。为了让这里显得更加真实，我故意打了这么多逗号、句号。当然我尽可能的打了很多，但是我希望摘要不要超过4行比较好。</p>
+                        </div>
+                        <hr />
+                        <div class="like-content">
+                            <!--<img class="left" src="images/like.png"><p  class="left">99999</p>-->
+                            <img src="images/comment.png"  class="comment_img"><p class="comment_p">99999</p>
+                            <img src="images/eye.png" class="eye_img"><p class="eye_p">99999</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="artical">
+                    <a href="/artical.html">
+                        <img class="a-pic" src="images/artical1.jpg">
+                        <div class="a-content">
+                            <span class="a-title">如何成为一个小仙女？【双十一必看】</span>
+                            <div class="a-info">
+                                精品收藏·11月08日
+                            </div>
+                            <p class="a-intro">正因为你为你的玫瑰花费了时间，这才使你的玫瑰如此重要。为了让这里显得更加真实，我故意打了这么多逗号、句号。当然我尽可能的打了很多，但是我希望摘要不要超过4行比较好。</p>
+                        </div>
+                        <hr />
+                        <div class="like-content">
+                            <!--<img class="left" src="images/like.png"><p  class="left">99999</p>-->
+                            <img src="images/comment.png"  class="comment_img"><p class="comment_p">99999</p>
+                            <img src="images/eye.png" class="eye_img"><p class="eye_p">99999</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="artical">
+                    <a href="/artical.html">
+                        <img class="a-pic" src="images/artical1.jpg">
+                        <div class="a-content">
+                            <span class="a-title">如何成为一个小仙女？【双十一必看】</span>
+                            <div class="a-info">
+                                精品收藏·11月08日
+                            </div>
+                            <p class="a-intro">正因为你为你的玫瑰花费了时间，这才使你的玫瑰如此重要。</p>
+                        </div>
+                        <hr />
+                        <div class="like-content">
+                            <!--<img class="left" src="images/like.png"><p  class="left">99999</p>-->
+                            <img src="images/comment.png"  class="comment_img"><p class="comment_p">99999</p>
+                            <img src="images/eye.png" class="eye_img"><p class="eye_p">99999</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="side-content">
+                <div class="sidenav">
+                    <div class="shadow">
+                        <p class="card-title">深大导航</p>
+                        <div class="nav-content">
+                            <a href="#">公文通</a>
+                            <a href="#">Blackboard</a>
+                            <a href="#">学生邮箱</a>
+                            <a href="#">校园场地申请</a>
+                            <a href="#">体育场馆订票</a>
+                        </div>
+                        <div class="nav-content">
+                            <a href="#">网络服务</a>
+                            <a href="#">事务中心</a>
+                            <a href="#">公寓管理</a>
+                            <a href="#">图书馆</a>
+                            <a href="#">网上电视</a>
+                            <a href="#">火车订票</a>
+                        </div>
+                        <div class="nav-content">
+                            <a href="#">教务管理</a>
+                            <a href="#">排课查询</a>
+                            <a href="#">网上选课</a>
+                            <a href="#">绩点查询</a>
+                            <a href="#">联系老师</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-card">
+                    <div class="shadow">
+                        <p class="card-title">最新评论</p>
+                        <div class="comment">
+                            <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                            <span>Sndel King</span>
+                            <p class="comment-source">2015.12.16 在 《天朝的崩溃》——鸦片战争再研究 中评论:</p>
+                            <p class="comment-value">开头有点搞笑，哈哈！我也支持小李子！！再接再厉啊！</p>
+                            <a href="javascript:void(0)">进入文章查看全文</a>
+                        </div>
+                        <div class="comment">
+                            <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                            <span>Sndel King</span>
+                            <p class="comment-source">2015.12.16 在 《人类的群星闪耀时》——灵魂犹若星辰 中评论:</p>
+                            <p class="comment-value">来灌水啦</p>
+                            <a href="javascript:void(0)">进入文章查看全文</a>
+                        </div>
+                        <div class="comment">
+                            <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                            <span>Sndel King</span>
+                            <p class="comment-source">2015.12.16 在 《人类的群星闪耀时》——灵魂犹若星辰 中评论:</p>
+                            <p class="comment-value">来灌水啦</p>
+                            <a href="javascript:void(0)">进入文章查看全文</a>
+                        </div>
+                        <div class="comment">
+                            <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                            <span>Sndel King</span>
+                            <p class="comment-source">2015.12.16 在 《人类的群星闪耀时》——灵魂犹若星辰 中评论:</p>
+                            <p class="comment-value">来灌水啦</p>
+                            <a href="javascript:void(0)">进入文章查看全文</a>
+                        </div>
+                        <div class="comment">
+                            <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                            <span>Sndel King</span>
+                            <p class="comment-source">2015.12.16 在 《人类的群星闪耀时》——灵魂犹若星辰 中评论:</p>
+                            <p class="comment-value">来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦来灌水啦</p>
+                            <a href="javascript:void(0)">进入文章查看全文</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-card">
+                    <div class="shadow">
+                        <p class="card-title">最近访客</p>
+                        <div class="content">
+                            <div class="visitor">
+                                <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                                <p>Sndel Sndel Sndel Sndel Sndel Sndel Sndel Kind</p>
+                            </div>
+                            <div class="visitor">
+                                <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                                <p>钟浩贤</p>
+                            </div>
+                            <div class="visitor">
+                                <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                                <p>不愿意透露姓名君</p>
+                            </div>
+                            <div class="visitor">
+                                <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                                <p>钟浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩浩贤</p>
+                            </div>
+                            <div class="visitor">
+                                <img src="http://wx.qlogo.cn/mmopen/R7dhnaWyfn8bHCVgaxsy2Q3XpGjwJ1DbEfMEmVGI2noZUlicxd1xGexqdqXA8pe902wnIcicOQOVQuicxenIibla1IxQZJdicm9ZS/0" alt="" />
+                                <p>许泽锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋锋</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+</body> 
+</html>
