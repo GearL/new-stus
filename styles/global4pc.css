@@ -142,23 +142,21 @@ body{
 .selector{
 	position: absolute;
 	bottom: 0.466667rem;
-	left: 20.5rem;
 	display: block;
-	width: 5.4rem;
+	width: 100%;
+    text-align: center;
 	height: 0.6rem;
 	z-index: 20;
-	float: left;
 }
-.round1,.round2,.round3,.round4{
-	display: block;
+.round{
+	display: inline-block;
 	margin-left: 0.6rem;
 	width: 0.533333rem;
 	height: 0.533333rem;
 	background-color: rgba(255,255,255,0.54);
 	border-radius: 50%;
-	float: left;
 }
-.round1{
+.round:nth-child(1){
 	margin-left:0 ;
 }
 .active{
@@ -166,7 +164,7 @@ body{
 }
 .b-container{
     position: relative;
-    width: 182.233333rem;
+    width: 227.7666667rem;
     height: 11.533333rem;
 }
 .b-container a{

@@ -9,17 +9,21 @@ window.onload = function(){
     var w = document.body.clientWidth;
     resized(w);
     bannerall = $(".b-container a");
-    bannerwidth = parseInt($(".b-container a").css("width"))/fontsize;
-    rounds={
-        '0' : $(".round1"),
-        '1' : $(".round2"),
-        '2' : $(".round3"),
-        '3' : $(".round4"),
+    for(var i=0;i<bannerall.length;i++){
+        if(i==0){
+            $(".selector").append('<a class="round active" href="javascript:void(0)"></a>');
+        }
+        else{
+            $(".selector").append('<a class="round" href="javascript:void(0)"></a>');
+        }
     }
+    bannerwidth = parseInt($(".b-container a").css("width"))/fontsize;
+    rounds = $(".round");
+    giveRoundsAndBannerNum();
     bannerRun();
     navcome(nownavid);
     bind();
-    if(window.onresize !=null){ 
+    if(window.onresize !=null){
         eval("theOldFun="+window.onresize.toString()); 
         window.onresize=function(){
             theOldFun();
@@ -27,10 +31,12 @@ window.onload = function(){
         }; 
     }
 };
-/*window.onresize = function(){
-    console.log(time);
-    bannerselect(now);
-}*/
+function giveRoundsAndBannerNum(){
+    for(var i=0;i<bannerall.length;i++){
+        bannerall.eq(i).attr("id","banner"+i);
+        rounds.eq(i).attr("id",i);
+    }
+}
 function resized(windowswidth){
     if(windowswidth<=767){
         fontsize= windowswidth/750*30 ;
@@ -60,7 +66,7 @@ function bannertouchend(event){
     if(lastPos["x"]>firstPos["x"]){
         time = 0;
         if(now==0){
-            bannerselect(3);
+            bannerselect(bannerall.length-1);
         }
         else{
             bannerselect(now-1);
@@ -68,7 +74,7 @@ function bannertouchend(event){
     }
     else if(lastPos["x"]<firstPos["x"]){
         time = 0;
-        if(now==3){
+        if(now==bannerall.length-1){
             bannerselect(0);
         }
         else{
@@ -80,6 +86,10 @@ function bind(){
     $('.b-container a')
    .on('touchstart', bannertouchstart)
    .on('touchend',bannertouchend);
+    //for(var i=bannerall.length-1;i>=0;i--){
+    for(var i=0;i<bannerall.length;i++){
+        rounds.eq(i).click(function(){ bannerselect(this.id)});
+    }
 }
 
 var time = 0;
@@ -87,12 +97,12 @@ function bannerRun(){
     setInterval(function(){ time += 1; },1);
     setInterval(function(){
         if(time>=2000){
-            rounds[now].removeClass("active");
+            rounds.eq(now).removeClass("active");
             now = now + 1;
-            if(now>=4){
+            if(now>=bannerall.length){
                 now = 0;
             }
-            rounds[now].addClass("active");
+            rounds.eq(now).addClass("active");
             bannerselect(now);
             time = 0;
         }
@@ -101,9 +111,9 @@ function bannerRun(){
 function bannerselect(bannerid){
     bannerall.css("left",-bannerid*bannerwidth+"rem");
     time = 0;
-    rounds[now].removeClass("active");
-    now = bannerid;
-    rounds[now].addClass("active");
+    rounds.eq(now).removeClass("active");
+    now = parseInt(bannerid);
+    rounds.eq(now).addClass("active");
     return false;
 }
 
